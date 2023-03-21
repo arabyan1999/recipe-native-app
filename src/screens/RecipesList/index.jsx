@@ -7,8 +7,6 @@ export default function RecipesList(props) {
   const { navigation, route } = props;
 
   const item = route?.params?.category;
-  console.log('route', route)
-  console.log('navigation', navigation)
   const recipesArray = getRecipes(item?.id);
 
   useLayoutEffect(() => {

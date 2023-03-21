@@ -21,7 +21,6 @@ const { width: viewportWidth } = Dimensions.get("window");
 
 const Recipe = ({ navigation, route }) => {
     const {item } = route.params;
-    console.log('route.params', route.params)
     const category = getCategoryById(item.categoryId);
     const title = getCategoryName(category.id);
 
@@ -44,7 +43,6 @@ const Recipe = ({ navigation, route }) => {
     }, []);
 
     const renderImage = ({item}) => {
-      console.log('item', item)
       return (
         <TouchableHighlight>
           <View style={styles.imageContainer}>

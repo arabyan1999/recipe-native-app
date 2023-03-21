@@ -24,7 +24,6 @@ const Home = ({ navigation }) => {
     };
 
     const renderRecipes = ({ item }) => {
-        console.log('item', item)
         return(
         <TouchableHighlight underlayColor="rgba(73,182,77,0.9)" onPress={() => onPressRecipe(item)}>
             <View style={styles.container}>
